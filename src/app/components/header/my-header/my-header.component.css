@@ -1,0 +1,62 @@
+.my_header {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  .auth-buttons button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+
+  
+  .auth-buttons .sign-up {
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 25px;
+  }
+  
+  .auth-buttons .sign-up:hover {
+    background-color: red;
+    color: white;
+  }
+  

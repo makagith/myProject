@@ -1,0 +1,258 @@
+.myContent {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 520px;
+    padding: 0 20px;
+}
+
+.LaslesVpn {
+    width: 600px;
+    height: 179.68px;
+    font-size: xx-large;
+}
+
+.imageLes {
+    width: 500px !important;
+    height: auto !important;
+}
+
+.imageLes img:first-child {
+    width: 600px; 
+    height: auto;
+}
+.get-started-btn {
+    background-color: rgba(245, 56, 56, 1);
+    color: white; 
+    border: none;
+    padding: 20px 70px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 45px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.LaslesVpn pre {
+    margin-bottom: 5px; 
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 50px 20px; 
+    margin-top: 50px;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #ffffff;
+    margin: 0 15px; 
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.count {
+    color: #333;
+}
+
+.numbers {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.features-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.feature-item img {
+    width: 500px; 
+    height: auto;
+}
+
+.feature-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0; 
+    white-space: nowrap; 
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.feature-subtitle {
+    font-size: 0.9rem; 
+    color: #777; 
+    margin-top: 8px; 
+    text-align: left;
+}
+.chosePlan{
+    margin-left: 45%;
+}
+.bestAnd{
+    margin-left: 45%;
+}
+
+
+
+
+.parent {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around;
+}
+
+.child {
+    height: 400px; 
+    width: 155px; 
+    background-color: white;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.child img {
+    width: 60%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.child h2 {
+    text-align: center; 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.child p {
+    text-align: center; 
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.select-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: red; 
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid red; 
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+
+.select-btn:hover {
+    background-color: darkred;
+}
+
+
+.NetworkConection{
+    font-size: 30px;
+    margin-left: 40%;
+  
+}
+.easier{
+    margin-left: 40%;
+}
+.mapLocation{
+    width: 498px;
+    height: 252px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+.virtualComuniti {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 50px; 
+    padding: 0 10px; 
+   
+}
+
+.virtualComuniti div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.virtualComuniti button {
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 150px;
+ 
+}
+
+.virtualComuniti button:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+}
+
+.virtualComuniti button img {
+    width: 50px;
+    height: auto;
+}
