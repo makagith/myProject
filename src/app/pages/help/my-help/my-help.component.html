@@ -1,4 +1,4 @@
-<div class="halp-row" >
+<!-- <div class="halp-row" >
     <div class="help-info-container">
     <p>nickolas tesla</p>
     <p>Email: nikocas99&#64;gmail.com</p>
@@ -52,4 +52,26 @@
         <p>phone:123-2123-449009</p>
         
     </div>
-</div>
+</div> -->
+
+
+<div *ngIf="users.length > 0; else noData">
+    <ul>
+      <li *ngFor="let user of users">
+        <p><strong>ID:</strong> {{ user.id }}</p>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Description:</strong> {{ user.description }}</p>
+        <p><strong>Address:</strong> {{ user.address.street }}, {{ user.address.city }}, {{ user.address.zipcode }}</p>
+        <p><strong>Phone:</strong> {{ user.phone }}</p>
+        <p><strong>Website:</strong> <a href="http://{{ user.website }}" target="_blank">{{ user.website }}</a></p>
+        <p><strong>Company:</strong> {{ user.company.name }} - {{ user.company.catchPhrase }}</p>
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noData>
+    <p>No data available</p>
+  </ng-template>
+  

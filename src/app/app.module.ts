@@ -15,6 +15,8 @@ import { SingUpComponent } from './pages/signup/sing-up/sing-up.component';
 import { SingInComponent } from './pages/login/sing-in/sing-in.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MyHelpComponent } from './pages/help/my-help/my-help.component';
+import { MyCalculatorComponent } from './components/calculator/my-calculator/my-calculator.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,12 +30,15 @@ import { MyHelpComponent } from './pages/help/my-help/my-help.component';
     MyTestimoialsComponent,
     SingUpComponent,
     SingInComponent,
-    MyHelpComponent
+    MyHelpComponent,
+    MyCalculatorComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
