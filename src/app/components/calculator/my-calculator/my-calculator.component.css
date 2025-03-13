@@ -1,0 +1,71 @@
+.calculator-container {
+    width: 529px; /* ფიქსირებული სიგანე */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .calculator-container-struct {
+    display: flex;
+    justify-content: space-between; /* ელემენტები განლაგება ერთმანეთის გვერდით */
+    gap: 10px; /* დაშორება input-ებს შორის */
+    flex-wrap: wrap; /* გადადის შემდეგ ხაზზე, თუ არ ჯდება */
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column; /* label და input-ი ერთმანეთის მიხედვით */
+    width: calc(14.28% - 10px); /* 7 input-ი გვერდში. calc(100% / 7) */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  input:focus {
+    border-color: #007bff; /* focus-ზე გამოჩნდეს ლურჯი ხაზები */
+    outline: none; /* არ იყოს ფოკუსის გარე ჩარჩო */
+  }
+  
+  input::placeholder {
+    color: #888; /* placeholder-ის ფერი */
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px; /* button-ის დაშორება input-ებისგან */
+    width: auto;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  button:not(:disabled) {
+    background-color: blue;
+    color: white;
+  }
+  
+  button:disabled {
+    background-color: grey;
+    color: black;
+  }
+  

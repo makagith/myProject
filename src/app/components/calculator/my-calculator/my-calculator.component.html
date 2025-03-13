@@ -1,1 +1,38 @@
+<div class="calculator-container">
+  <form class="calculator-container-struct" [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
+    <div class="input-group">
+      <label for="from">From:</label>
+      <input id="from" formControlName="from" type="text" placeholder="საიდან" />
+    </div>
+    <div class="input-group">
+      <label for="to">To:</label>
+      <input id="to" formControlName="to" type="text" placeholder="სად" />
+    </div>
+    <div class="input-group">
+      <label for="container">Container:</label>
+      <input id="container" formControlName="container" type="text" placeholder="კონტეინერი" />
+    </div>
+    <div class="input-group">
+      <label for="start">Start:</label>
+      <input id="start" formControlName="start" type="text" placeholder="დაწყება" />
+    </div>
+    <div class="input-group">
+      <label for="weight">Weight:</label>
+      <input id="weight" formControlName="weight" type="number" placeholder="წონა" />
+    </div>
+    <div class="input-group">
+      <label for="seaLine">Sea Line:</label>
+      <input id="seaLine" formControlName="seaLine" type="text" placeholder="საზღვაო ხაზი" />
+    </div>
 
+    <button 
+      type="submit" 
+      [disabled]="calculatorForm.invalid"
+      [ngStyle]="{
+        backgroundColor: isSubmitSuccessful ? 'blue' : 'grey',
+        color: isSubmitSuccessful ? 'white' : 'black'
+      }">
+      Calculate
+    </button>
+  </form>
+</div>
