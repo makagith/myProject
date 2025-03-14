@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { PirceServiseService } from './../../../calculateProductPrice/pirce-servise.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-my-calculator',
@@ -9,18 +10,17 @@ import { PirceServiseService } from './../../../calculateProductPrice/pirce-serv
 })
 export class MyCalculatorComponent implements OnInit {
   calculatorForm!: FormGroup;
-  isSubmitSuccessful = false;
 
   constructor(private fb: FormBuilder, private priceService: PirceServiseService) {}
 
   ngOnInit(): void {
     this.calculatorForm = this.fb.group({
-      from: ['', ],
-      to: ['', ],
-      container: ['',],
-      start: ['', ],
-      weight: ['', ],
-      seaLine: ['',],
+      from: ['', Validators.required],
+      to: ['', Validators.required],
+      container: ['', Validators.required],
+      start: ['', Validators.required],
+      weight: ['', [Validators.required]],
+      seaLine: ['', Validators.required],
     });
   }
 
@@ -29,14 +29,17 @@ export class MyCalculatorComponent implements OnInit {
       const formData = this.calculatorForm.value;
       this.priceService.calculate(formData).subscribe(
         (response) => {
-          // მონაცემები წარმატებით გაიგზავნა
-          alert('მონაცემები წარმატებით გაიგზავნა');
-          this.isSubmitSuccessful = true;
+          Swal.fire({
+            text: 'მონაცემები წარმატებით გაიგზავნა',
+            confirmButtonText: 'კარგი'
+          });
           console.log('Form Submitted!', response);
         },
         (error) => {
-          // შეცდომის დროს შეგიძლიათ გამოიყენოთ სხვა alert
-          alert('მოხდა შეცდომა!');
+          Swal.fire({
+            text: 'მონაცემები წარმატებით გაიგზავნა',
+            confirmButtonText: 'კარგი'
+          });
           console.error('Form submission error', error);
         }
       );
